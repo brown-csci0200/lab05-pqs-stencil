@@ -25,7 +25,8 @@ public class ParenthesisChecker {
    */
   public ParenthesisChecker() {
 
-    // TODO: Task 11, Initialize the stack.
+    // TODO: Task 11, Properly initialize the stack.
+    this.stack = null;
   }
 
   /**

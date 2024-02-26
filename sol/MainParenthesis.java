@@ -15,11 +15,12 @@ public class MainParenthesis {
   public static void main(String[] args) {
 
     ParenthesisChecker checker = new ParenthesisChecker();
-
-    try {
-      // TODO: Task 9, fill out the try block!
-    } catch (ParenthesisExceptionStencil e) {
-      System.out.println("Encountered an error: " + e.getErrorMessage());
-    }
+    
+    // TODO: Task 9, uncomment and then fill out the try block!
+    // try {
+     
+    // } catch (ParenthesisExceptionStencil e) {
+    //   System.out.println("Encountered an error: " + e.getErrorMessage());
+    // }
   }
 }
