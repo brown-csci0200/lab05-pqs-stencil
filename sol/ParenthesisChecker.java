@@ -12,7 +12,7 @@ public class ParenthesisChecker {
    * A mapping of opening to closing parentheses.
    */
   private static final HashMap<Character, Character> parentheses_match = new HashMap<>();
-  // TODO: Task 10. Populate parentheses_match.
+  // TODO: Task 9. Populate parentheses_match.
 
   /**
    * The stack used to keep track of opening parentheses during the checking process.
@@ -25,7 +25,7 @@ public class ParenthesisChecker {
    */
   public ParenthesisChecker() {
 
-    // TODO: Task 11, Properly initialize the stack.
+    // TODO: Task 10, Properly initialize the stack.
     this.stack = null;
   }
 
@@ -43,13 +43,13 @@ public class ParenthesisChecker {
 
       // If it's an opening parenthesis, add it to the stack
       if (parentheses_match.containsKey(letter)) {
-        // TODO: Task 12, Complete the logic for what if there is an opening parenthesis in your string
+        // TODO: Task 11, Complete the logic for what if there is an opening parenthesis in your string
       }
 
       // If it's a closing parenthesis, check if it matches the last opening parenthesis
       if (parentheses_match.containsValue(letter)) {
         if (this.stack.isEmpty()) {
-          // TODO: Task 12, what if the stack is empty meaning there is no opening parenthesis to
+          // TODO: Task 11, what if the stack is empty, meaning there is no opening parenthesis to
           //    match? We want to throw an exception!
         }
 
@@ -58,7 +58,7 @@ public class ParenthesisChecker {
         char last = this.stack.pop();
 
         if (parentheses_match.get(last) != letter) {
-          // TODO: Task 12, what if the last item in the stack isn't the match for the current
+          // TODO: Task 11, what if the last item in the stack isn't the match for the current
           //  closing parenthesis?
         }
       }
@@ -66,7 +66,7 @@ public class ParenthesisChecker {
 
     // Check if there are unmatched opening parentheses
     if (!this.stack.isEmpty()) {
-      // TODO: Task 12, what if the stack is not empty when we finish iterating through our string?
+      // TODO: Task 11, what if the stack is not empty when we finish iterating through our string?
     }
   }
 }
