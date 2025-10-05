@@ -16,7 +16,7 @@ public class MainParenthesis {
 
     ParenthesisChecker checker = new ParenthesisChecker();
     
-    // TODO: Task 9, uncomment the try-catch block below and then fill it out!
+    // TODO: Task 8, uncomment the try-catch block below and then fill it out!
     // try {
      
     // } catch (ParenthesisExceptionStencil e) {
